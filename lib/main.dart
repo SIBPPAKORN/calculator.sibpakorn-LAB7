@@ -52,6 +52,7 @@ class _MyAppState extends State<MyApp> {
           buttonLabel,
           style: TextStyle(
             fontSize: 20,
+            color: Colors.orange,
           ),
         ),
       ),
@@ -64,7 +65,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Calculator"),
+          title: Text("Calculator.sibpakorn"),
         ),
         body: Column(
           children: [
@@ -73,7 +74,10 @@ class _MyAppState extends State<MyApp> {
               alignment: Alignment.centerRight,
               child: Text(
                 result,
-                style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 48,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.orange),
               ),
             ),
             Expanded(
@@ -84,10 +88,10 @@ class _MyAppState extends State<MyApp> {
                 Row(
                   children: [
                     myButton(
-                      "7",
+                      "1",
                     ),
-                    myButton("8"),
-                    myButton("9"),
+                    myButton("2"),
+                    myButton("3"),
                     myButton("/"),
                   ],
                 ),
@@ -101,9 +105,9 @@ class _MyAppState extends State<MyApp> {
                 ),
                 Row(
                   children: [
-                    myButton("1"),
-                    myButton("2"),
-                    myButton("3"),
+                    myButton("7"),
+                    myButton("8"),
+                    myButton("9"),
                     myButton("-"),
                   ],
                 ),
@@ -116,7 +120,11 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
                 Row(
-                  children: [myButton("CLEAR"), myButton("="), myButton("..")],
+                  children: [
+                    myButton("CLEAR"),
+                    myButton("="),
+                    myButton(".."),
+                  ],
                 ),
               ],
             ),
