@@ -83,7 +83,9 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Row(
                   children: [
-                    myButton("7"),
+                    myButton(
+                      "7",
+                    ),
                     myButton("8"),
                     myButton("9"),
                     myButton("/"),
